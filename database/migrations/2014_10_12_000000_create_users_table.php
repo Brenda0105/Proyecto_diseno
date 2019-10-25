@@ -23,6 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('birth_date');
             $table->string('client_number');
             $table->string('phone_number');
+<<<<<<< HEAD
             $table->double('total_balance'); // 5000 -> 4500
 
             // Para las direciones de entrega
@@ -36,6 +37,10 @@ class CreateUsersTable extends Migration
             $table->longText('credits');
 
             $table->string('rfc', 50);
+=======
+
+            $table->double('total_balance');
+>>>>>>> 9366250c97e2ca5e25b27dd4723777deaf693485
 
             $table->rememberToken();
             $table->timestamps();

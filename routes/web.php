@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
+<<<<<<< HEAD
     return view('uriel.uriel');
+=======
+    return view('uriel');
+>>>>>>> 9366250c97e2ca5e25b27dd4723777deaf693485
 });
 
 Auth::routes();
