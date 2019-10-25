@@ -13,8 +13,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    {{-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> --}}
+
 </head>
 
 <body>
@@ -54,9 +53,9 @@
                                 Crédito Coppel
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="{{ route('register') }}">Solciitar Crédito
+                                <a class="dropdown-item" href="{{ route('credit_request') }}">Solciitar Crédito
                                     Coppel</a>
-                                <a class="dropdown-item" href="#">Estado de cuenta</a>
+                                <a class="dropdown-item" href="{{ route('coppel_login')}}">Estado de cuenta</a>
                             </div>
                         </li>
                         <li><a href="{{ route('login') }}">Login</a></li>

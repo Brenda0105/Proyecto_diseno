@@ -14,7 +14,7 @@ class CreditRequestController extends Controller
      */
     public function index()
     {
-        //
+        return view('uriel.coppel_credit');
     }
 
     /**
@@ -35,7 +35,10 @@ class CreditRequestController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $credit_request =  CreditRequest::create($request->all());
+
+        //return redirect()->route('store_credit_request');
+        return view('uriel.confirm_credit', ["credit_request" => $credit_request]);
     }
 
     /**
@@ -81,5 +84,10 @@ class CreditRequestController extends Controller
     public function destroy(CreditRequest $creditRequest)
     {
         //
+    }
+
+    public function confirm($id)
+    {
+        $credit = CreditRequest::find($id);
     }
 }

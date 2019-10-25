@@ -11,14 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-<<<<<<< HEAD
-    return view('uriel.uriel');
-=======
-    return view('uriel');
->>>>>>> 9366250c97e2ca5e25b27dd4723777deaf693485
-});
-
 Auth::routes();
 
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/uriel', function () {
+    return view('uriel.uriel');
+});
+
+
+
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/solicita-tu-credito-coppel', 'CreditRequestController@index')->name('credit_request');
+Route::get('/te-llamaremos-en-unos-minutos', 'CreditRequestController@confirm')->name('confirm_credit_request');
+Route::get('/inicar-seson', 'Coppel@login')->name('coppel_login');
+Route::post('/solicita-tu-credito-coppel', 'CreditRequestController@store')->name('store_credit_request');
+Route::post('/iniciar-o-crear-cuenta', 'Coppel@loginOrCreateAccount')->name('check_coppel_login');
