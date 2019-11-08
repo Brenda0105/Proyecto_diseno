@@ -1,0 +1,60 @@
+html
+    head
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css") 
+        link(rel="stylesheet", href="http://localhost:8000/css/styles.css")
+    body.main
+        header
+            nav.navbar.navbar-light.bg-light.justify-content-between
+                a.navbar-brand 
+                    img(src="http://localhost:8000/img/coppel.png", width="100", alt="alt")
+                    Coppel
+                a.btn.btn-primary.btn-link(href="/") Volver a Coppel.com
+        br
+        br
+        main.mt-5
+            div.container
+                div.row
+                    div.col-md-7
+                        div.wrapper-cp
+                    div.col-md-5
+                        div.card
+                            div.card-header.text-center
+                                h4 Inicia sesión con tu correo
+                            div.card-body
+                                form.form-group(method="POST" action="http://localhost:8000/iniciar-o-crear-cuenta")
+                                    div.container
+                                        div.row
+                                            div.col-12.p-2
+                                                input.form-control(placeholder="Correo lectrónico",name="email")
+                                            div.col-12.p-2
+                                                input.form-control(name="password",placeholder="Contraseña",type="password")
+                                            div.col-6.p-2
+                                                div.form-check
+                                                    input.form-check-input#check(type="checkbox")
+                                                    label.form-check-label(for="check") Recordarme
+                                            div.col-6.p-2
+                                                button.btn.btn-link ¿Olvidaste tu contraseña?
+                                            div.col-12.p-2
+                                                br
+                                                button.btn.btn-block.btn-primary Iniciar Sesión
+                                            div.col-12.p-2.text-center
+                                                br
+                                                h3 ¿Eres nuevo en Coppel.com?
+                                                br
+                                                br
+                                            div.col-12
+                                                button.btn.btn-block.btn-outline-dark(onclick="account()") Crea tu cuenta
+                                            input(type="hidden" value="0" name="origin" id="origin")
+                            div.card-footer
+                                div.container
+                                    div.row
+                                        div.col-12
+                                            h6 Si no recibiste el correo de activación,
+                                                a(href="")  haz clic aquí.
+        script.
+            function account() {
+                let inp = document.getElementById('origin');
+                inp.value = 1;
+            }
+

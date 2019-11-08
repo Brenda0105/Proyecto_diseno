@@ -15,14 +15,14 @@ class Coppel extends Controller
 
     public function login()
     {
-        return view('uriel.login');
+        return view('uriel.flogin');
     }
 
 
     public function loginOrCreateAccount(Request $request)
     {
 
-
+        //return dd($request->all());
         $origin = $request->origin;
         $email = $request->email;
         $pwd = $request->password;
@@ -73,6 +73,6 @@ class Coppel extends Controller
 
 
 
-        return view('uriel.login');
+        return view('uriel.flogin');
     }
 }
