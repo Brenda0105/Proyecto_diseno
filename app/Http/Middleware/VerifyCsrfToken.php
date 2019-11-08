@@ -13,5 +13,9 @@ class VerifyCsrfToken extends BaseVerifier
      */
     protected $except = [
         '/solicita-tu-credito-coppel',
+        '/iniciar-o-crear-cuenta',
+        '/actualizar-informacion/{id}',
+        '/actualizar-informacion/*',
+        '/actualizar-domicilios/*',
     ];
 }

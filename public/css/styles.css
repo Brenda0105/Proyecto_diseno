@@ -43,3 +43,13 @@
 .tarjeta {
     background-color: rgb(241, 208, 60);
 }
+
+.main {
+    background-color: rgb(235, 235, 235);
+}
+
+.wrapper-cp {
+    background: url('../img/back.jpg');
+    height: 500px;
+    width: 100%;
+}
