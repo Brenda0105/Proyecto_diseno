@@ -16,6 +16,7 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('surnames');
             $table->string('email')->unique();
             $table->string('password');
             $table->string('address');
@@ -25,7 +26,7 @@ class CreateUsersTable extends Migration
             $table->string('phone_number');
             $table->double('total_balance'); // 5000 -> 4500
 
-            // Para las direciones de entrega
+            // Para las direcciones de entrega
             $table->string('street');
             $table->string('suburb');
             $table->string('postal_code');

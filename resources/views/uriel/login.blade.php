@@ -67,7 +67,11 @@
                         <div class="form-group">
                             <div class="col-md-4"></div>
                             <div class="col-md-4">
+<<<<<<< HEAD
                                 <button type="submit" class="btn btn-block btn-outline-light" onclick="account()">
+=======
+                                <button type="submit" class="btn btn-block btn-outline-primary" onclick="account()">
+>>>>>>> 5994ce4db8a505fc7d7106a764d48ebf0622e132
                                     Crea tu cuenta
                                 </button>
                             </div>

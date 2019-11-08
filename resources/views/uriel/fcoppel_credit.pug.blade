@@ -1,0 +1,124 @@
+@extends('uriel.app')
+@section('content')
+
+
+doctype html
+html
+    head
+        //link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css")
+        //link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css") 
+        //link(rel="stylesheet", href="http://localhost:8000/css/styles.css")
+    body.b-credit
+        header.ribbon.p-2
+            div.container
+                div.row.mt-3
+                    div.col-4.text-right
+                        img(src="http://localhost:8000/img/tarjeta_coppel_min.png", width="170" alt="alt")
+                    div.col-8.text-left
+                        h1.text-white ¿Estás listo para el Buen Fin?
+                        h5.text-white ¡Solicita tu Crédito! Es muy fácil, Solo ingresa tus datos
+                div.row.mt-3.text-white
+                    div.col-6.text-right
+                        h3.text-white Beneficios de tu crédito Coppel
+                        ul.lists.text-center
+                            li.item Paga en plazos de hasta 36 meses
+                            li.item Obtén préstamos de hasta $40,000
+                    div.col-6.text-right
+                        div.mt-4
+                        ul.lists.text-left
+                            li.item Paga en plazos de hasta 36 meses
+                            li.item Obtén préstamos de hasta $40,000
+                div.row.text-black-50
+                    div.col-2.text-center
+                    div.col-8.text-center.bg-white.form-c
+                        br
+                        form(action="http://localhost:8000/solicita-tu-credito-coppel" method="POST")
+                            {{ csrf_field() }}
+                            h2 Datos Personales
+                            h6 Escribe tu nombre como aparece en tu credencial para votar.
+                            div.row
+                                div.col-12.col-md-6
+                                    input.form-control(placeholder="Pimer nombre*",name="first_name")
+                                div.col-12.col-md-6
+                                    input.form-control(placeholder="Segundo nombre*",name="second_name")
+                            div.row.mt-3
+                                div.col-12.col-md-6
+                                    input.form-control(placeholder="Primer apellido*",name="first_surname")
+                                div.col-12.col-md-6
+                                    input.form-control(placeholder="Segundo apellido",name="second_surname")
+                            div.row.mt-3
+                                div.col-12.col-md-6.text-left
+                                    label.text-left(for="birth_date") Fecha de nacimiento
+                                    input.form-control(type="date",name="birth_date")
+                                div.col-12.col-md-6.text-left
+                                    label.text-left(for="rfc") Con tu RFC revisaremos si ya tienes un credito
+                                    input.form-control(type="text",name="rfc")
+                            br
+                            div.row
+                                div.col-12
+                                    h2 Datos de contacto
+                                    h6 Te contactaremos por estos medios para informarte sobre tu solicitud.
+                            div.row
+                                div.col-12.col-md-6
+                                    input.form-control(placeholder="Correo electronico*",name="email")
+                                div.col-12.col-md-6
+                                    input.form-control(placeholder="Telefono celular*",name="phone_number")
+                            div.row.mt-3
+                                div.col-12.col-md-6
+                                    input.form-control(placeholder="Telefono fijo (Lada + numero)",name="home_phone")
+                            div.row.text-left.mt-5
+                                div.col-2
+                                div.col-2.text-right
+                                    input(type='checkbox' checked=false,name="checked")
+                                div.col-8        
+                                    label(for="checked") He leído y acepto los Terminos y Condiciones
+                                div.col-2
+                            div.row
+                                .col-12.text-center
+                                    button.btn.btn-secondary.mb-4(type='submit') Continuar
+                        br
+                        br    
+                    div.col-2.text-center
+                    
+
+
+
+
+                //- div.ui.four.column.doubling.stackable.grid.container
+                //-     div.column
+                //-     div.column.right
+                //-         ul.list
+                //-             li.item Paga en plazos de hasta 36 meses
+                //-             li.item Obtén préstamos de hasta $40,000
+                //-     div.column.left
+                //-         ul.list
+                //-             li.item Paga en plazos de hasta 36 meses
+                //-             li.item Obtén préstamos de hasta $40,000
+                //-     div.column
+                    
+        #script(src='https://code.jquery.com/jquery-3.1.1.min.js')
+        #script(src='https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js')
+
+
+
+
+
+
+
+
+
+//- div.ui.four.column.doubling.stackable.grid.container
+//- div.column
+//- div.column.right
+//- ul.list
+//- li.item Paga en plazos de hasta 36 meses
+//- li.item Obtén préstamos de hasta $40,000
+//- div.column.left
+//- ul.list
+//- li.item Paga en plazos de hasta 36 meses
+//- li.item Obtén préstamos de hasta $40,000
+//- div.column
+
+//script(src='https://code.jquery.com/jquery-3.1.1.min.js')
+//script(src='https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js')
+@endsection
