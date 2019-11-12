@@ -1,76 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
   <head> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><script(src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js")>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Equipos Celulares | Coppel.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="BOOTSTRAP/bootstrap-4.1.1/dist/css/boostrap.css">
+    <style type="text/css"></style>
+    <title>Equipos Celulares | Coppel.com</title><link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   </head>
-  <body>
-    <div class="uicontainer"> <a class="ui top attaached header" href="apple.html" style="color:BLACK">Inicio / Celulares / Equipos</a></div>
-    <div class="ui three column grid" style="margin-top:20px">
-      <div class="column grid" style="margin-left:360px">
-        <div class="ui fluid card" style="width:250px; background-color:WITHE">
-          <div class="image"><img src="../../public/img/huawei.jpg" alt="" style="margin-left:0px"></div>
-          <div class="ui content" style="width:160px"><a class="ui header">iPhone 11 Pro Max 64GB Space Gray</a>
-            <h2 class="ui center" style="width:250px">$29,199 de contado </h2>
-            <h4 class="ui text" style="width:250px">Desde $1,656 quincenal</h4><i class="truck icon" style="margin-left:10px"></i><i class="building icon" style="margin-left:15px"></i>
+  <body style="background-color: #F1EFD7;">
+    <div class="div">
+      <div class="ui attached stackable menu" style="background: #EFDE1E"><a class="item"><a href="index.html" class="ui small image"><img src="img/c-logo.jpg"></a></a><a class="item">Todo el Sitio</a>
+        <div class="ui simple dropdown item"> <i class="dropdown icon"></i>
+          <div class="menu"><a class="item" href="Vistas/liquidacion.html"><i class="dollar sign icon"></i> Liquidación</a>
+<a class="item"><i class="mobile alternate icon"></i> Celulares</a>
+<a class="item"><i class="headphones icon"></i> Electrónica</a>
+<a class="item"><i class="shirtsinbulk icon"></i> Línea Blanca</a>
+<a class="item"><i class="female icon"></i> Zapatos Para Mujer</a>
+<a class="item"><i class="child icon"></i> Zapatos Para Hombre</a>
           </div>
-          <button class="ui primary button" style="width:200px; margin-left:25px">Comprar  </button>
         </div>
-      </div>
-      <div class="column grid" style="background-color:WITHE; margin-left:-180px">
-        <div class="ui fluid card" style="width:250px">
-          <div class="image"><img src="../../public/img/huawei.jpg" alt="" style="margin-left:0px"></div>
-          <div class="ui content" style="width:160px"><a class="ui header">iPhone 11 Pro Max 64GB Space Gray</a>
-            <h2 class="ui center" style="width:250px">$29,199 de contado </h2>
-            <h4 class="ui text" style="width:250px">Desde $1,656 quincenal</h4><i class="truck icon" style="margin-left:10px"></i><i class="building icon" style="margin-left:15px"></i>
+        <div class="ui icon input"><input type="text" placeholder="Busca Tus Productos..." >
+<i class="inverted circular search link icon"></i>
+        </div><a class="right item"><i class="phone icon"></i> Comprar Ahora: 800 220 7735</a><a class="item; btn btn-lg" href="#Modal" data-toggle="modal"><i class="map marker alternate icon"></i> Eviar a: <i class="dropdown icon"></i></a><a class="right item"><i class="user icon"></i> Iniciar Sesion</a>
+        <div class="ui simple dropdown item"><i class="dropdown icon"></i>
+          <div class="menu">
+             <a class="item"><i class="user plus icon"></i> Crear Cuenta</a></div>
+        </div><button class="ui blue button"><i class="shopping cart icon"></i></button>
+<!-- Modal -->
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="Modalabel" aria-hidden="true" style="width: 1400px;">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="Modalabel">Elige el <strong>estado</strong> y la <strong>ciudad de entrega</strong> para mejorar tu experiencia de compra</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+              </div>
+              <div class="modal-body">
+                <form class="ui form">
+                  <div class="field">
+                    <div class="form-group"><label for="Select01">Estado</label>
+<select class="form-control" id="Select01" style="width: 350px;">
+<option selected>Elige el Estado...</option>
+<option>Coahuila</option>
+<option>Chihuahua</option>
+<option>Colima</option>
+</select>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="form-group"><label for="Select02">Ciudad</label>
+<select class="form-control" id="Select02" style="width: 350px;">
+<option selected>Elige tu Ciudad...</option>
+<option>Coahuila</option>
+<option>Chihuahua</option>
+<option>Colima</option>
+</select>
+                    </div>
+                  </div>
+                  <div class="modal-footer"><button class="ui inverted primary button" data-dismiss="modal">Cancelar</button>
+<button class="ui inverted secondary button">Guardar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-          <button class="ui primary button" style="width:200px; margin-left:25px">Comprar  </button>
-        </div>
-      </div>
-      <div class="column grid" style="margin-left:-180px">
-        <div class="ui fluid card" style="width:250px">
-          <div class="image"><img src="../../public/img/huawei.jpg" alt="" style="margin-left:0px"></div>
-          <div class="ui content" style="width:160px"><a class="ui header">iPhone 11 Pro Max 64GB Space Gray</a>
-            <h2 class="ui center" style="width:250px">$29,199 de contado </h2>
-            <h4 class="ui text" style="width:250px">Desde $1,656 quincenal</h4><i class="truck icon" style="margin-left:10px"></i><i class="building icon" style="margin-left:15px"></i>
-          </div>
-          <button class="ui primary button" style="width:200px; margin-left:25px">Comprar  </button>
         </div>
       </div>
     </div>
-    <div class="ui three column grid" style="margin-top:20px">
-      <div class="column grid" style="margin-left:360px">
-        <div class="ui fluid card" style="width:250px; background-color:WITHE">
-          <div class="image"><img src="../../public/img/huawei.jpg" alt="" style="margin-left:0px"></div>
-          <div class="ui content" style="width:160px"><a class="ui header">iPhone 11 Pro Max 64GB Space Gray</a>
-            <h2 class="ui center" style="width:250px">$29,199 de contado </h2>
-            <h4 class="ui text" style="width:250px">Desde $1,656 quincenal</h4><i class="truck icon" style="margin-left:10px"></i><i class="building icon" style="margin-left:15px"></i>
+    <div class="div">
+      <div class="ui attached stackable menu" style="background: #FAF73C"><a class="item">Departamento</a>
+        <div class="ui simple dropdown item"><i class="dropdown icon"></i> 
+<div class="menu">  
+<a class="item" href="Vistas/liquidacion.html"><i class="dollar sign icon"></i> Liquidación</a>
+<a class="item"><i class="mobile alternate icon"></i> Celulares</a>
+<a class="item"><i class="headphones icon"></i> Electrónica</a>
+<a class="item"><i class="shirtsinbulk icon"></i> Línea Blanca</a>
+<a class="item"><i class="female icon"></i> Zapatos Para Mujer</a>
+<a class="item"><i class="child icon"></i> Zapatos Para Hombre</a>
+</div>
+        </div><a href="https://www.google.com/maps/place/Torre%C3%B3n,+Coah./@25.5485471,-103.5420016,11z/data=!3m1!4b1!4m5!3m4!1s0x868fdba9bb45b3fb:0x8bcc7a9970aea01d!8m2!3d25.5428443!4d-103.4067861" style="padding-left: 1000px;"><button class="ui yellow button"><i class="map marker alternate icon"></i>Ubica Tu Tienda</button></a>
+      </div>
+      <div class="uicontainer"> <a class="ui top attaached header" href="apple.html" style="color:BLACK">Inicio / Celulares / Equipos</a></div>
+      <div class="ui three column grid" style="margin-top:20px">
+        <div class="column grid" style="margin-left:360px">
+          <div class="ui fluid card" style="width:250px; background-color:WITHE">
+            <div class="image"><img src="../../public/img/huawei.jpg" alt="" style="margin-left:0px"></div>
+            <div class="ui content" style="width:160px"><a class="ui header">Huawei P20 128GB Azul</a>
+              <h2 class="ui center" style="width:250px">$14,899 de contado </h2>
+              <h4 class="ui text" style="width:250px">Desde $870 quincenal</h4><i class="truck icon" style="margin-left:10px"></i><i class="building icon" style="margin-left:15px"></i>
+            </div>
+            <button class="ui primary button" style="width:200px; margin-left:25px">Comprar  </button>
           </div>
-          <button class="ui primary button" style="width:200px; margin-left:25px">Comprar  </button>
+        </div>
+        <div class="column grid" style="background-color:WITHE; margin-left:-180px">
+          <div class="ui fluid card" style="width:250px">
+            <div class="image"><img src="../../public/img/huawei1.jpg" alt="" style="margin-left:0px"></div>
+            <div class="ui content" style="width:160px"><a class="ui header">Huawei Y7 2019 Azul</a>
+              <h2 class="ui center" style="width:250px">$3,999 de contado </h2>
+              <h4 class="ui text" style="width:250px">Desde $240 quincenal</h4><i class="truck icon" style="margin-left:10px"></i><i class="building icon" style="margin-left:15px"></i>
+            </div>
+            <button class="ui primary button" style="width:200px; margin-left:25px">Comprar  </button>
+          </div>
+        </div>
+        <div class="column grid" style="margin-left:-180px">
+          <div class="ui fluid card" style="width:250px">
+            <div class="image"><img src="../../public/img/huawei2.jpg" alt="" style="margin-left:0px"></div>
+            <div class="ui content" style="width:160px"><a class="ui header">Huawei P30 Lite 128GB</a>
+              <h2 class="ui center" style="width:250px">$11,999 de contado </h2>
+              <h4 class="ui text" style="width:250px">Desde $700 quincenal</h4><i class="truck icon" style="margin-left:10px"></i><i class="building icon" style="margin-left:15px"></i>
+            </div>
+            <button class="ui primary button" style="width:200px; margin-left:25px">Comprar  </button>
+          </div>
         </div>
       </div>
-      <div class="column grid" style="background-color:WITHE; margin-left:-180px">
-        <div class="ui fluid card" style="width:250px">
-          <div class="image"><img src="../../public/img/huawei.jpg" alt="" style="margin-left:0px"></div>
-          <div class="ui content" style="width:160px"><a class="ui header">iPhone 11 Pro Max 64GB Space Gray</a>
-            <h2 class="ui center" style="width:250px">$29,199 de contado </h2>
-            <h4 class="ui text" style="width:250px">Desde $1,656 quincenal</h4><i class="truck icon" style="margin-left:10px"></i><i class="building icon" style="margin-left:15px"></i>
+      <div class="ui three column grid" style="margin-top:20px">
+        <div class="column grid" style="margin-left:360px">
+          <div class="ui fluid card" style="width:250px; background-color:WITHE">
+            <div class="image"><img src="../../public/img/huawei5.jpg" alt="" style="margin-left:0px"></div>
+            <div class="ui content" style="width:160px"><a class="ui header">Huawei P30 128GB</a>
+              <h2 class="ui center" style="width:250px">$15,999 de contado </h2>
+              <h4 class="ui text" style="width:250px">Desde $1,000 quincenal</h4><i class="truck icon" style="margin-left:10px"></i><i class="building icon" style="margin-left:15px"></i>
+            </div>
+            <button class="ui primary button" style="width:200px; margin-left:25px">Comprar  </button>
           </div>
-          <button class="ui primary button" style="width:200px; margin-left:25px">Comprar  </button>
         </div>
-      </div>
-      <div class="column grid" style="margin-left:-180px">
-        <div class="ui fluid card" style="width:250px">
-          <div class="image"><img src="../../public/img/huawei.jpg" alt="" style="margin-left:0px"></div>
-          <div class="ui content" style="width:160px"><a class="ui header">iPhone 11 Pro Max 64GB Space Gray</a>
-            <h2 class="ui center" style="width:250px">$29,199 de contado </h2>
-            <h4 class="ui text" style="width:250px">Desde $1,656 quincenal</h4><i class="truck icon" style="margin-left:10px"></i><i class="building icon" style="margin-left:15px"></i>
+        <div class="column grid" style="background-color:WITHE; margin-left:-180px">
+          <div class="ui fluid card" style="width:250px">
+            <div class="image"><img src="../../public/img/huawei4.jpg" alt="" style="margin-left:0px"></div>
+            <div class="ui content" style="width:160px"><a class="ui header">Huawei Y9 Prime 2019</a>
+              <h2 class="ui center" style="width:250px">$5,999 de contado </h2>
+              <h4 class="ui text" style="width:250px">Desde $350 quincenal</h4><i class="truck icon" style="margin-left:10px"></i><i class="building icon" style="margin-left:15px"></i>
+            </div>
+            <button class="ui primary button" style="width:200px; margin-left:25px">Comprar  </button>
           </div>
-          <button class="ui primary button" style="width:200px; margin-left:25px">Comprar  </button>
         </div>
-      </div>
+        <div class="column grid" style="margin-left:-180px">
+          <div class="ui fluid card" style="width:250px">
+            <div class="image"><img src="../../public/img/huawei6.jpg" alt="" style="margin-left:0px"></div>
+            <div class="ui content" style="width:160px"><a class="ui header">Huawei P30 Pro 256GB</a>
+              <h2 class="ui center" style="width:250px">$7,490 de contado </h2>
+              <h4 class="ui text" style="width:250px">Desde $440 quincenal</h4><i class="truck icon" style="margin-left:10px"></i><i class="building icon" style="margin-left:15px"></i>
+            </div>
+            <button class="ui primary button" style="width:200px; margin-left:25px">Comprar  </button>
+          </div>
+        </div>
+      </div><div class="ui four column stackable column grid">
+<div class="column"style="margin-left:60px">
+<div class="ui form">
+<h2>Recibe ofertas y beneficios por correo</h2>
+</div>
+</div>
+<div class="colum">
+<div class="ui inline fields">
+<div class="field">
+<div class="ui radio checkbox">
+<input type="radio" name="Mujer">
+<label for="Mujer">Soy Mujer
+      <input type="radio" name="Hombre">
+      <label for="Hombre">Soy Hombre</label></div>
+</div>
+</div>
+</div>
+<div class="column"style="width:700px">
+<div class="rigth item" style="margin-left:350px">
+<h2 style="width:250px">Ventas por telefono</h2>
+<p class="rigth item" style="margin-left:5px; color:#3C3B3C">800 220 7735</p>
+<p class="rigth item" style="color:3C3C3C">Horario de atención telefónica</p>
+<p>7:00 a 21:00 horas</p>
+</div>
+</div>
+<div class="column">
+<div class="input item" borde="null" style="margin-left:400px;margin-top:-122px">
+<div class="ui input">
+<input type="text" placeholder="Ingresa tu correo electronico" style="width:265px">
+<button class="ui primary button"style="width:125px"> SUSCRIBIRME </button>
+</div>
     </div>
   </body>
 </html>
