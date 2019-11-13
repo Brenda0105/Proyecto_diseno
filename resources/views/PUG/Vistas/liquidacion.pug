@@ -1,0 +1,175 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+        link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen")
+        link(href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" rel="stylesheet")
+        link(rel="stylesheet" href="BOOTSTRAP/bootstrap-4.1.1/dist/css/boostrap.css")
+        style(type="text/css")
+        title Liquidación
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    body(style="background-color: #F1EFD7;")
+        div(class="div")
+            div(class="ui attached stackable menu" style="background: #EFDE1E")
+                    a(class="item")
+                        <a href="../index.html" class="ui small image"><img src="../img/c-logo.jpg"></a>
+                    a(class="item") Todo el Sitio
+                    div(class="ui simple dropdown item") 
+                        i(class="dropdown icon")
+                        div(class="menu")
+                            <a class="item" href="liquidacion.html"><i class="dollar sign icon"></i> Liquidación</a>
+                            <a class="item" href="../../Brenda/celulares1.html"><i class="mobile alternate icon"></i> Celulares</a>
+                            <a class="item" href="../../Luis/coppel-electronic.html"><i class="headphones icon"></i> Electrónica</a>
+                            <a class="item" href="../../Cristal/linea_blanca.html"><i class="shirtsinbulk icon"></i> Línea Blanca</a>
+                            <a class="item" href="../../Cristal/zapatos.html"><i class="child icon"></i> Zapatos Dama/Caballero</a>
+                    div(class="ui icon input")
+                        <input type="text" placeholder="Busca Tus Productos..." >
+                        <i class="inverted circular search link icon"></i>
+                    a(class="right item")
+                        <i class="phone icon"></i> Comprar Ahora: 800 220 7735
+
+                    a(href="#Modal" class="item; btn btn-lg" data-toggle="modal")
+                        <i class="map marker alternate icon"></i> Eviar a: <i class="dropdown icon"></i>
+                    a(class="right item")
+                        <i class="user icon"></i> Iniciar Sesion
+                    div(class="ui simple dropdown item")
+                        <i class="dropdown icon"></i>
+                        div(class="menu")  
+                            <a class="item" href="../../uriel/test.blade.php"><i class="user plus icon"></i> Crear Cuenta</a>
+                    <a href="../../Luis/coppel.html"><button class="ui blue button"><i class="shopping cart icon"></i></button></a>
+
+                        <!-- Modal -->
+                    div(class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="Modalabel" aria-hidden="true" style="width: 1400px;")
+                        div(class="modal-dialog" role="document")
+                            div(class="modal-content")
+                                div(class="modal-header")
+                                    h5(class="modal-title" id="Modalabel") Elige el <strong>estado</strong> y la <strong>ciudad de entrega</strong> para mejorar tu experiencia de compra
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                div(class="modal-body")
+                                    form(class="ui form")
+                                        div(class="field")
+                                            div(class="form-group")
+                                                <label for="Select01">Estado</label>
+                                                    <select class="form-control" id="Select01" style="width: 350px;">
+                                                        <option selected>Elige el Estado...</option>
+                                                        <option>Coahuila</option>
+                                                        <option>Chihuahua</option>
+                                                    </select>
+
+                                        div(class="field")
+                                            div(class="form-group")
+                                                <label for="Select02">Ciudad</label>
+                                                    <select class="form-control" id="Select02" style="width: 350px;">
+                                                        <option selected>Elige tu Ciudad...</option>
+                                                        <option>Coahuila</option>
+                                                        <option>Chihuahua</option>
+                                                    </select>
+                                        div(class="modal-footer")
+                                            <button class="ui inverted primary button" data-dismiss="modal">Cancelar</button>
+                                            <button class="ui inverted secondary button">Guardar</button>
+                                        
+
+        div(class="div")
+            div(class="ui attached stackable menu" style="background: #FAF73C")
+                a(class="item") Departamento
+                div(class="ui simple dropdown item")
+                    <i class="dropdown icon"></i> 
+                    <div class="menu">  
+                        <a class="item" href="liquidacion.html"><i class="dollar sign icon"></i> Liquidación</a>
+                        <a class="item" href="../../Brenda/celulares1.html"><i class="mobile alternate icon"></i> Celulares</a>
+                        <a class="item" href="../../Luis/coppel-electronic.html"><i class="headphones icon"></i> Electrónica</a>
+                        <a class="item" href="../../Cristal/linea_blanca.html"><i class="shirtsinbulk icon"></i> Línea Blanca</a>
+                        <a class="item" href="../../Cristal/zapatos.html"><i class="child icon"></i> Zapatos Dama/Caballero</a>
+                    </div>
+                <a href="https://www.google.com/maps/place/Torre%C3%B3n,+Coah./@25.5485471,-103.5420016,11z/data=!3m1!4b1!4m5!3m4!1s0x868fdba9bb45b3fb:0x8bcc7a9970aea01d!8m2!3d25.5428443!4d-103.4067861" style="padding-left: 1000px;"><button class="ui yellow button"><i class="map marker alternate icon"></i>Ubica Tu Tienda</button></a>
+                
+        div(class="div" style="background-color: #F1EFD7; width: 250px; margin-left: 40px; float: left; margin-top: 20px;")
+            h1 Liquidación
+            div(class="container" style="background-color: white; width: 250px; float: left; height: 600px;")
+                h2 Categoría
+                br
+                <a href="../../Brenda/celulares1.html"><h4> Celulares</h4></a>
+                br
+                <a href="../../Luis/coppel-electronic.html"><h4>Electrónicos</h4></a>
+                br
+                <a href="../../Cristal/linea_blanca.html"><h4>Línea Blanca</h4></a>
+                br
+                <a href="../../Cristal/zapatos.html"><h4>Zapatos Dama/Caballero</h4></a>
+        div(style="float: left;background-color: #F1EFD7; margin-top: 30px;")
+            img(src="../img/cop.jpg" style="width: 990px;")
+        div(class="container" style="margin-left: 300px; margin-top: 800px;")
+            div(class="ui cards" style="float: left; height: 500px;")
+                div(class="card")
+                    div(class="content")
+                        <div class="header"><img src="../img/elect.jpg" style="width: 250px;"></div>
+                        <div class="description"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>Procesador Record WB-006</b>
+                        </font></font>
+                        br
+                        br
+                        br
+                        </div>
+                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><s>$2999</s>
+                        </font></font>
+                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><h1 style="color: #DC0425;">$1999</h1>
+                        </font></font>
+                        br
+                        i(class="truck icon" style="color: green;")
+                        br
+                        br
+                            
+                    div(class="ui blue bottom attached button")
+                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Comprar<i class="chevron right icon"></i>
+                    </font></font>
+                div(class="card" style="margin-left: 20px; float: left; margin-top: -11px;")
+                    div(class="content")
+                        a(href="https://www.coppel.com/zapatos/zapatos-para-mujer/tenis-rosas-marca-jennifer-lopez-para-mujer-pr-8006822")
+                            <div class="header"><img src="../img/z-mana.jpg" style="width: 250px;"></div>
+                            <div class="description"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>Tenis Rosas marca Jennifer Lopez para Mujer</b>
+                            </font></font>
+                            br
+                            br
+                            br
+                            </div>
+                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><s>$499</s>
+                            </font></font>
+                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><h1 style="color: #DC0425;">$249</h1>
+                            </font></font>
+                            br
+                            i(class="truck icon" style="color: green;")
+                            br
+                            br
+                    div(class="ui blue bottom attached button")
+                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Comprar<i class="chevron right icon"></i>
+                    </font></font>
+                div(class="card" style="margin-left: 20px; float: left; margin-top: -11px;")
+                    div(class="content")
+                        a(href="https://www.coppel.com/tenis-negros-marca-sportline-para-hombre-pr-8006432")
+                            <div class="header"><img src="../img/z-man.jpg" style="width: 250px;"></div>
+                            <div class="description"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><b>Tenis Negros marca Sportline para Hombre</b>
+                            </font></font>
+                            br
+                            br
+                            br
+                            </div>
+                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><s>$599</s>
+                            </font></font>
+                            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><h1 style="color: #DC0425;">$299</h1>
+                            </font></font>
+                            br
+                            i(class="truck icon" style="color: green;")
+                            br
+                            br
+                            
+                    div(class="ui blue bottom attached button")
+                        <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Comprar<i class="chevron right icon"></i>
+                    </font></font>
+                
+
+        script(src="https://code.jquery.com/jquery-3.1.1.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js") 
+        script(src="js/bootstrap.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")

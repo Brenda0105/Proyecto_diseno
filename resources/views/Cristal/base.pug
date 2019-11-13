@@ -1,0 +1,93 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+        link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen")
+        link(href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" rel="stylesheet")
+        link(rel="stylesheet" href="BOOTSTRAP/bootstrap-4.1.1/dist/css/boostrap.css")
+        style(type="text/css")
+        title Coppel
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    body(style="background-color: #F1EFD7;")
+        div(class="div")
+            div(class="ui attached stackable menu" style="background: #EFDE1E")
+                    a(class="item")
+                        <a href="index.html" class="ui small image"><img src="img/c-logo.jpg"></a>
+                    a(class="item") Todo el Sitio
+                    div(class="ui simple dropdown item") 
+                        i(class="dropdown icon")
+                        div(class="menu")
+                            <a class="item" href="Vistas/liquidacion.html"><i class="dollar sign icon"></i> Liquidación</a>
+                            <a class="item"><i class="mobile alternate icon"></i> Celulares</a>
+                            <a class="item"><i class="headphones icon"></i> Electrónica</a>
+                            <a class="item"><i class="shirtsinbulk icon"></i> Línea Blanca</a>
+                            <a class="item"><i class="female icon"></i> Zapatos Para Mujer</a>
+                            <a class="item"><i class="child icon"></i> Zapatos Para Hombre</a>
+                    div(class="ui icon input")
+                        <input type="text" placeholder="Busca Tus Productos..." >
+                        <i class="inverted circular search link icon"></i>
+                    a(class="right item")
+                        <i class="phone icon"></i> Comprar Ahora: 800 220 7735
+
+                    a(href="#Modal" class="item; btn btn-lg" data-toggle="modal")
+                        <i class="map marker alternate icon"></i> Eviar a: <i class="dropdown icon"></i>
+                    a(class="right item")
+                        <i class="user icon"></i> Iniciar Sesion
+                    div(class="ui simple dropdown item")
+                        <i class="dropdown icon"></i>
+                        div(class="menu")  
+                            <a class="item"><i class="user plus icon"></i> Crear Cuenta</a>
+                    <button class="ui blue button"><i class="shopping cart icon"></i></button>
+
+                        <!-- Modal -->
+                    div(class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="Modalabel" aria-hidden="true" style="width: 1400px;")
+                        div(class="modal-dialog" role="document")
+                            div(class="modal-content")
+                                div(class="modal-header")
+                                    h5(class="modal-title" id="Modalabel") Elige el <strong>estado</strong> y la <strong>ciudad de entrega</strong> para mejorar tu experiencia de compra
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                div(class="modal-body")
+                                    form(class="ui form")
+                                        div(class="field")
+                                            div(class="form-group")
+                                                <label for="Select01">Estado</label>
+                                                    <select class="form-control" id="Select01" style="width: 350px;">
+                                                        <option selected>Elige el Estado...</option>
+                                                        <option>Coahuila</option>
+                                                        <option>Chihuahua</option>
+                                                        <option>Colima</option>
+                                                    </select>
+
+                                        div(class="field")
+                                            div(class="form-group")
+                                                <label for="Select02">Ciudad</label>
+                                                    <select class="form-control" id="Select02" style="width: 350px;">
+                                                        <option selected>Elige tu Ciudad...</option>
+                                                        <option>Coahuila</option>
+                                                        <option>Chihuahua</option>
+                                                        <option>Colima</option>
+                                                    </select>
+                                        div(class="modal-footer")
+                                            <button class="ui inverted primary button" data-dismiss="modal">Cancelar</button>
+                                            <button class="ui inverted secondary button">Guardar</button>
+                                        
+
+        div(class="div")
+            div(class="ui attached stackable menu" style="background: #FAF73C")
+                a(class="item") Departamento
+                div(class="ui simple dropdown item")
+                    <i class="dropdown icon"></i> 
+                    <div class="menu">  
+                        <a class="item" href="Vistas/liquidacion.html"><i class="dollar sign icon"></i> Liquidación</a>
+                        <a class="item"><i class="mobile alternate icon"></i> Celulares</a>
+                        <a class="item"><i class="headphones icon"></i> Electrónica</a>
+                        <a class="item"><i class="shirtsinbulk icon"></i> Línea Blanca</a>
+                        <a class="item"><i class="female icon"></i> Zapatos Para Mujer</a>
+                        <a class="item"><i class="child icon"></i> Zapatos Para Hombre</a>
+                    </div>
+                <a href="https://www.google.com/maps/place/Torre%C3%B3n,+Coah./@25.5485471,-103.5420016,11z/data=!3m1!4b1!4m5!3m4!1s0x868fdba9bb45b3fb:0x8bcc7a9970aea01d!8m2!3d25.5428443!4d-103.4067861" style="padding-left: 1000px;"><button class="ui yellow button"><i class="map marker alternate icon"></i>Ubica Tu Tienda</button></a>
+                
