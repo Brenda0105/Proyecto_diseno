@@ -1,11 +1,15 @@
 doctype html
 html(lang="es")
     head 
-        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        <script(src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js")>
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+        link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen")
+        link(href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" rel="stylesheet")
+        link(rel="stylesheet" href="BOOTSTRAP/bootstrap-4.1.1/dist/css/boostrap.css")
+        style(type="text/css")
         title Equipos Celulares | Coppel.com
+<<<<<<< HEAD
     body
         div(class="uicontainer")
              a(class="ui top attaached header",href="huawey.html",style="color:BLACK") Inicio / Celulares / Equipos
@@ -77,3 +81,190 @@ html(lang="es")
                         i(class="truck icon",style="margin-left:10px")
                         i(class="building icon",style="margin-left:15px")
                     button(class="ui primary button",style="width:200px; margin-left:25px") Comprar  
+=======
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+        
+    body(style="background-color: #F1EFD7;")
+        div(class="div")
+            div(class="ui attached stackable menu" style="background: #EFDE1E")
+                    a(class="item")
+                        <a href="index.html" class="ui small image"><img src="img/c-logo.jpg"></a>
+                    a(class="item") Todo el Sitio
+                    div(class="ui simple dropdown item") 
+                        i(class="dropdown icon")
+                        div(class="menu")
+                            <a class="item" href="Vistas/liquidacion.html"><i class="dollar sign icon"></i> Liquidación</a>
+                            <a class="item" href="celulares1.html"><i class="mobile alternate icon"></i> Celulares</a>
+                            <a class="item"><i class="headphones icon"></i> Electrónica</a>
+                            <a class="item"><i class="shirtsinbulk icon"></i> Línea Blanca</a>
+                            <a class="item"><i class="female icon"></i> Zapatos Para Mujer</a>
+                            <a class="item"><i class="child icon"></i> Zapatos Para Hombre</a>
+                    div(class="ui icon input")
+                        <input type="text" placeholder="Busca Tus Productos..." >
+                        <i class="inverted circular search link icon"></i>
+                    a(class="right item")
+                        <i class="phone icon"></i> Comprar Ahora: 800 220 7735
+
+                    a(href="#Modal" class="item; btn btn-lg" data-toggle="modal")
+                        <i class="map marker alternate icon"></i> Eviar a: <i class="dropdown icon"></i>
+                    a(class="right item")
+                        <i class="user icon"></i> Iniciar Sesion
+                    div(class="ui simple dropdown item")
+                        <i class="dropdown icon"></i>
+                        div(class="menu")  
+                            <a class="item"><i class="user plus icon"></i> Crear Cuenta</a>
+                    <button class="ui blue button"><i class="shopping cart icon"></i></button>
+
+                        <!-- Modal -->
+                    div(class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="Modalabel" aria-hidden="true" style="width: 1400px;")
+                        div(class="modal-dialog" role="document")
+                            div(class="modal-content")
+                                div(class="modal-header")
+                                    h5(class="modal-title" id="Modalabel") Elige el <strong>estado</strong> y la <strong>ciudad de entrega</strong> para mejorar tu experiencia de compra
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                div(class="modal-body")
+                                    form(class="ui form")
+                                        div(class="field")
+                                            div(class="form-group")
+                                                <label for="Select01">Estado</label>
+                                                    <select class="form-control" id="Select01" style="width: 350px;">
+                                                        <option selected>Elige el Estado...</option>
+                                                        <option>Coahuila</option>
+                                                        <option>Chihuahua</option>
+                                                        <option>Colima</option>
+                                                    </select>
+
+                                        div(class="field")
+                                            div(class="form-group")
+                                                <label for="Select02">Ciudad</label>
+                                                    <select class="form-control" id="Select02" style="width: 350px;">
+                                                        <option selected>Elige tu Ciudad...</option>
+                                                        <option>Coahuila</option>
+                                                        <option>Chihuahua</option>
+                                                        <option>Colima</option>
+                                                    </select>
+                                        div(class="modal-footer")
+                                            <button class="ui inverted primary button" data-dismiss="modal">Cancelar</button>
+                                            <button class="ui inverted secondary button">Guardar</button>
+                                        
+
+        div(class="div")
+            div(class="ui attached stackable menu" style="background: #FAF73C")
+                a(class="item") Departamento
+                div(class="ui simple dropdown item")
+                    <i class="dropdown icon"></i> 
+                    <div class="menu">  
+                        <a class="item" href="Vistas/liquidacion.html"><i class="dollar sign icon"></i> Liquidación</a>
+                        <a class="item"><i class="mobile alternate icon"></i> Celulares</a>
+                        <a class="item"><i class="headphones icon"></i> Electrónica</a>
+                        <a class="item"><i class="shirtsinbulk icon"></i> Línea Blanca</a>
+                        <a class="item"><i class="female icon"></i> Zapatos Para Mujer</a>
+                        <a class="item"><i class="child icon"></i> Zapatos Para Hombre</a>
+                    </div>
+                <a href="https://www.google.com/maps/place/Torre%C3%B3n,+Coah./@25.5485471,-103.5420016,11z/data=!3m1!4b1!4m5!3m4!1s0x868fdba9bb45b3fb:0x8bcc7a9970aea01d!8m2!3d25.5428443!4d-103.4067861" style="padding-left: 1000px;"><button class="ui yellow button"><i class="map marker alternate icon"></i>Ubica Tu Tienda</button></a>
+            div(class="uicontainer")
+                a(class="ui top attaached header",href="celulares1.html",style="color:BLACK")  Celulares / Equipos
+            div(class="ui three column grid",style="margin-top:20px")
+                div(class="column grid", style="margin-left:360px")
+                    div(class="ui fluid card",style="width:250px; background-color:WITHE")
+                        div(class="image")
+                            img(src="img/samsung3.jpg", alt="",style="margin-left:0px")
+                        div(class="ui content", style="width:160px")
+                            a(class="ui header") Samsung Galaxy Note9 128GB
+                            h2(class="ui center",style="width:250px") $18,999 de contado 
+                            h4(class="ui text",style="width:250px") Desde $1,078 quincenal
+                            i(class="truck icon",style="margin-left:10px")
+                            i(class="building icon",style="margin-left:15px")
+                        button(class="ui primary button",style="width:200px; margin-left:25px") Comprar  
+                div(class="column grid", style="background-color:WITHE; margin-left:-180px")
+                    div(class="ui fluid card", style="width:250px")
+                        div(class="image")
+                            img(src="img/samsung1.jpg", alt="",style="margin-left:0px")
+                        div(class="ui content", style="width:160px")
+                            a(class="ui header") Samsung Galaxy Note10 256GB
+                            h2(class="ui center",style="width:250px") $23,165 de contado 
+                            h4(class="ui text",style="width:250px") Desde $1,362 quincenal
+                            i(class="truck icon",style="margin-left:10px")
+                            i(class="building icon",style="margin-left:15px")
+                        button(class="ui primary button",style="width:200px; margin-left:25px") Comprar  
+                div(class="column grid",style="margin-left:-180px")
+                    div(class="ui fluid card", style="width:250px")
+                        div(class="image")
+                            img(src="img/samsung2.jpg", alt="",style="margin-left:0px")
+                        div(class="ui content", style="width:160px")
+                            a(class="ui header") Samsung Galaxy A50 128GB
+                            h2(class="ui center",style="width:250px") $7,499 de contado 
+                            h4(class="ui text",style="width:250px") Desde $270 quincenal
+                            i(class="truck icon",style="margin-left:10px")
+                            i(class="building icon",style="margin-left:15px")
+                        button(class="ui primary button",style="width:200px; margin-left:25px") Comprar  
+            div(class="ui three column grid",style="margin-top:20px")
+                div(class="column grid", style="margin-left:360px")
+                    div(class="ui fluid card",style="width:250px; background-color:WITHE")
+                        div(class="image")
+                            img(src="img/samsung4.jpg", alt="",style="margin-left:0px")
+                        div(class="ui content", style="width:160px")
+                            a(class="ui header") Samsung Galaxy A70 128GB
+                            h2(class="ui center",style="width:250px") $9,999 de contado 
+                            h4(class="ui text",style="width:250px") Desde $568 quincenal
+                            i(class="truck icon",style="margin-left:10px")
+                            i(class="building icon",style="margin-left:15px")
+                        button(class="ui primary button",style="width:200px; margin-left:25px") Comprar  
+                div(class="column grid", style="background-color:WITHE; margin-left:-180px")
+                    div(class="ui fluid card", style="width:250px")
+                        div(class="image")
+                            img(src="img/samsung5.jpg", alt="",style="margin-left:0px")
+                        div(class="ui content", style="width:160px")
+                            a(class="ui header") Samsung Galaxy A80 128GB
+                            h2(class="ui center",style="width:250px") $16,999 de contado 
+                            h4(class="ui text",style="width:250px") Desde $964 quincenal
+                            i(class="truck icon",style="margin-left:10px")
+                            i(class="building icon",style="margin-left:15px")
+                        button(class="ui primary button",style="width:200px; margin-left:25px") Comprar  
+                div(class="column grid",style="margin-left:-180px")
+                    div(class="ui fluid card", style="width:250px")
+                        div(class="image")
+                            img(src="img/samsung6.jpg", alt="",style="margin-left:0px")
+                        div(class="ui content", style="width:160px")
+                            a(class="ui header") Samsung S10 Plus 128GB
+                            h2(class="ui center",style="width:250px") $23,999 de contado 
+                            h4(class="ui text",style="width:250px") Desde $1,361 quincenal
+                            i(class="truck icon",style="margin-left:10px")
+                            i(class="building icon",style="margin-left:15px")
+                        button(class="ui primary button",style="width:200px; margin-left:25px") Comprar 
+            <div class="ui four column stackable column grid">
+                    <div class="column"style="margin-left:60px">
+                        <div class="ui form">
+                            <h2>Recibe ofertas y beneficios por correo</h2>
+                        </div>
+                    </div>
+                    <div class="colum">
+                        <div class="ui inline fields">
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input type="radio" name="Mujer">
+                                    <label for="Mujer">Soy Mujer
+                                    input(type="radio",name="Hombre")
+                                    label(for="Hombre") Soy Hombre
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column"style="width:700px">
+                        <div class="rigth item" style="margin-left:350px">
+                        <h2 style="width:250px">Ventas por telefono</h2>
+                        <p class="rigth item" style="margin-left:5px; color:#3C3B3C">800 220 7735</p>
+                        <p class="rigth item" style="color:3C3C3C">Horario de atención telefónica</p>
+                        <p>7:00 a 21:00 horas</p>
+                        </div>
+                    </div>
+                            
+                    <div class="column">
+                        <div class="input item" borde="null" style="margin-left:400px;margin-top:-122px">
+                            <div class="ui input">
+                                <input type="text" placeholder="Ingresa tu correo electronico" style="width:265px">
+                            <button class="ui primary button"style="width:125px"> SUSCRIBIRME </button>
+                            </div> 
+>>>>>>> 7e27be8091df17121d49eedff3ccc01bd80f937d
